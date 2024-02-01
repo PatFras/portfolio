@@ -1,45 +1,49 @@
 ---
-import type { Code } from "astro:components";
 import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
   {
     date: "",
     title: "",
+    company: "",
     description: "",
     link: "",
   },
   {
     date: "",
     title: "",
+    company: "",
     description: "",
     link: "",
   },
   {
     date: "",
     title: "",
+    company: "",
     description: "",
     link: "",
   },
   {
     date: "",
     title: "",
+    company: "",
     description: "",
     link: "",
   },
   {
     date: "",
     title: "",
+    company: "",
     description: "",
     link: "",
   },
 ];
 ---
 
-<ol class="relative border-s border-gray-200 ml-3">
+<ol class="relative mt-16">
   {
     EXPERIENCE.map((experience) => (
-      <li class="mb-10 ms-4">
+      <li class="">
         <ExperienceItem {...experience} />
       </li>
     ))

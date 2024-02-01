@@ -1,69 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Badge from "../components/Badge.astro";
-import LinkedIn from "../components/icons/LinkedIn.astro";
-import GitHub from "../components/icons/GitHub.astro";
-import SocialPill from "../components/SocialPill.astro";
-import Experience from "../components/Experience.astro";
-import Briefcase from "../components/icons/Briefcase.astro";
 import Code from "../components/icons/Code.astro";
 import Projects from "../components/Projects.astro";
-import Footer from "../components/Footer.astro";
+import Presentation from "../components/Presentation.astro";
 ---
 
 <Layout
   title="Portfolio - Patricio Frascaroli"
-  description="Desarrollador Web Full Stack"
+  description="Developed with Astro & Tailwind"
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-24">
-      <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
-      >
-        Patricio Frascaroli <a
-          href="https://www.linkedin.com/in/patricio-frascaroli-081762253/"
-          target="_blank"
-          rel="noopener"
-          class="flex justify-center items-center"
-        >
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
-        +3 años de experiencia. Desarrollador Web Full Stack. De Tandil, Buenos
-        Aires, Argentina.
-      </h2>
-      <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill
-          href="https://www.linkedin.com/in/patricio-frascaroli-081762253/"
-        >
-          <LinkedIn class="size-4 md:size-6" />
-          LinkedIn
-        </SocialPill>
-        <SocialPill href="https://github.com/PatFras">
-          <GitHub class="size-4 md:size-6" />
-          GitHub
-        </SocialPill>
-      </nav>
+    <SectionContainer class="py-16 md:py-36">
+      <Presentation />
     </SectionContainer>
-
-    {
-      /*}<SectionContainer id="experience">
+    <div class="space-y-24">
+      {
+        /*}<SectionContainer id="experience">
       <h2 class="text-2lx font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7" />
         Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>*/
-    }
-
-    <SectionContainer id="projects">
-      <h2 class="text-2lx font-semibold mb-6 flex gap-x-3 items-center">
-        <Code class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
+      }
+      <SectionContainer id="projects">
+        <h2
+          class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+        >
+          <Code class="size-7" />
+          Proyectos
+        </h2>
+        <Projects />
+      </SectionContainer>
+    </div>
   </main>
 </Layout>
