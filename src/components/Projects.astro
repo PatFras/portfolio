@@ -6,8 +6,19 @@ import JavaScript from "./icons/tags/JavaScript.astro";
 import LinkButton from "./LinkButton.astro";
 import GitHubProject from "./icons/GitHubProject.astro";
 import Link from "./icons/Link.astro";
+import NodeJS from "./icons/tags/NodeJS.astro";
 
 const TAGS = {
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-black text-white",
+    icon: JavaScript,
+  },
+  NODEJS: {
+    name: "Node.js",
+    class: "bg-black text-white",
+    icon: NodeJS,
+  },
   REACT: {
     name: "React",
     class: "bg-black text-white",
@@ -23,11 +34,6 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Mysql,
   },
-  JAVASCRIPT: {
-    name: "JavaScript",
-    class: "bg-black text-white",
-    icon: JavaScript,
-  },
 };
 const PROJECTS = [
   {
@@ -37,7 +43,7 @@ const PROJECTS = [
     link: "",
     github: "https://github.com/PatFras/grupo_3_ticketPro",
     image: "/projects/ticketPro.webp",
-    tags: [TAGS.REACT, TAGS.JAVASCRIPT, TAGS.EXPRESS, TAGS.MYSQL],
+    tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.NODEJS, TAGS.EXPRESS, TAGS.MYSQL],
   },
 ];
 ---

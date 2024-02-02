@@ -1,0 +1,137 @@
+---
+import Angular from "./icons/stack/Angular.astro";
+import AstroIcon from "./icons/stack/AstroIcon.astro";
+import Java from "./icons/stack/Java.astro";
+import javascript from "./icons/stack/JavaScript.astro";
+import NodeJS from "./icons/stack/NodeJS.astro";
+import React from "./icons/stack/React.astro";
+import typescript from "./icons/stack/TypeScript.astro";
+import WordPress from "./icons/stack/WordPress.astro";
+import HTML from "./icons/stack/HTML.astro";
+import CSS from "./icons/stack/CSS.astro";
+import Tailwind from "./icons/stack/Tailwind.astro";
+import Bootstrap from "./icons/stack/Bootstrap.astro";
+import Express from "./icons/stack/Express.astro";
+import Spring from "./icons/stack/Spring.astro";
+import MySQL from "./icons/stack/MySQL.astro";
+import PostgreSQL from "./icons/stack/PostgreSQL.astro";
+import Docker from "./icons/stack/Docker.astro";
+
+const LOGOS = {
+  JAVASCRIPT: {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  JAVA: {
+    name: "Java",
+    icon: Java,
+  },
+  ANGULAR: {
+    name: "Angular",
+    icon: Angular,
+  },
+  REACT: {
+    name: "React",
+    icon: React,
+  },
+  ASTRO: {
+    name: "Astro",
+    icon: AstroIcon,
+  },
+  NODEJS: {
+    name: "Node.js",
+    icon: NodeJS,
+  },
+  WORDPRESS: {
+    name: "WordPress",
+    icon: WordPress,
+  },
+  HTML: {
+    name: "HTML",
+    icon: HTML,
+  },
+  CSS: {
+    name: "CSS",
+    icon: CSS,
+  },
+  TAILWIND: {
+    name: "Tailwind",
+    icon: Tailwind,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    icon: Bootstrap,
+  },
+  EXPRESS: {
+    name: "Express",
+    icon: Express,
+  },
+  SPRING: {
+    name: "Spring",
+    icon: Spring,
+  },
+  MYSQL: {
+    name: "MySQL",
+    icon: MySQL,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    icon: PostgreSQL,
+  },
+  DOCKER: {
+    name: "Docker",
+    icon: Docker,
+  },
+};
+
+const SKILLS = [
+  {
+    logos: [
+      LOGOS.JAVASCRIPT,
+      LOGOS.TYPESCRIPT,
+      LOGOS.JAVA,
+      LOGOS.ANGULAR,
+      LOGOS.REACT,
+      LOGOS.NODEJS,
+      LOGOS.ASTRO,
+      LOGOS.WORDPRESS,
+      LOGOS.HTML,
+      LOGOS.CSS,
+      LOGOS.TAILWIND,
+      LOGOS.BOOTSTRAP,
+      LOGOS.EXPRESS,
+      LOGOS.SPRING,
+      LOGOS.MYSQL,
+      LOGOS.POSTGRESQL,
+      LOGOS.DOCKER,
+    ],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    SKILLS.map(({ logos }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="flex flex-wrap mt-2">
+          <ul class="flex flex-column mb-2 gap-x-2">
+            {logos.map((logo) => (
+              <li>
+                <span
+                  class={`flex flex-col gap-x-2 gap-y-2 rounded-full text-xs items-center`}
+                >
+                  <logo.icon class="size-10" />
+                  {logo.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </article>
+    ))
+  }
+</div>
