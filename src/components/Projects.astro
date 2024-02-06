@@ -39,7 +39,7 @@ const PROJECTS = [
   {
     title: "ticketPro",
     description:
-      "Created in 2023 from scratch with React | JavaScript | Express | MySQL. It's an e-commerce that sells tickets for events",
+      "Created in 2023 from scratch with React | JavaScript | Express | MySQL. It's an e-commerce that sells tickets for events.",
     link: "",
     github: "https://github.com/PatFras/grupo_3_ticketPro",
     image: "/projects/ticketPro.webp",
@@ -68,7 +68,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="grid grid-cols-3 mb-2 gap-x-2 gap-y-2">
               {tags.map((tag) => (
                 <li>
                   <span
@@ -81,7 +81,7 @@ const PROJECTS = [
               ))}
             </ul>
 
-            <div class="mt-2 text-gray-700 dark:text-gray-400">
+            <div class="mt-2 text-gray-700 dark:text-gray-400 text-pretty">
               {description}
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
