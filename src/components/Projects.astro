@@ -7,6 +7,9 @@ import LinkButton from "./LinkButton.astro";
 import GitHubProject from "./icons/GitHubProject.astro";
 import Link from "./icons/Link.astro";
 import NodeJS from "./icons/tags/NodeJS.astro";
+import AstroTag from "./icons/tags/AstroTag.astro";
+import Svelte from "./icons/tags/Svelte.astro";
+import TypeScript from "./icons/tags/TypeScript.astro";
 
 const TAGS = {
   JAVASCRIPT: {
@@ -34,6 +37,21 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Mysql,
   },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-black text-white",
+    icon: AstroTag,
+  },
+  SVELTE: {
+    name: "Svelte",
+    class: "bg-black text-white",
+    icon: Svelte,
+  },
+  TYPESCRIPT: {
+    name: "TypeScript",
+    class: "bg-black text-white",
+    icon: TypeScript,
+  },
 };
 const PROJECTS = [
   {
@@ -44,6 +62,15 @@ const PROJECTS = [
     github: "https://github.com/PatFras/grupo_3_ticketPro",
     image: "/projects/ticketPro.webp",
     tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.NODEJS, TAGS.EXPRESS, TAGS.MYSQL],
+  },
+  {
+    title: "livePDF",
+    description:
+      "Created in 2024, livePDF integrates Cloudinary and OpenAI so you can chat with any pdf file",
+    link: "",
+    github: "https://github.com/PatFras/chat-with-pdf",
+    image: "/projects/livepdf.webp",
+    tags: [TAGS.ASTRO, TAGS.SVELTE, TAGS.TYPESCRIPT],
   },
 ];
 ---
