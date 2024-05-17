@@ -10,6 +10,7 @@ import NodeJS from "./icons/tags/NodeJS.astro";
 import AstroTag from "./icons/tags/AstroTag.astro";
 import Svelte from "./icons/tags/Svelte.astro";
 import TypeScript from "./icons/tags/TypeScript.astro";
+import WordPress from "./icons/stack/WordPress.astro";
 
 const TAGS = {
   JAVASCRIPT: {
@@ -52,16 +53,30 @@ const TAGS = {
     class: "bg-black text-white",
     icon: TypeScript,
   },
+  WORDPRESS: {
+    name: "Wordpress",
+    class: "bg-black text-white",
+    icon: WordPress,
+  },
 };
 const PROJECTS = [
   {
-    title: "ticketPro",
+    title: "La Clara Hospedaje",
     description:
-      "Created in 2023 from scratch with React | JavaScript | Express | MySQL. It's an e-commerce that sells tickets for events.",
-    link: "",
-    github: "https://github.com/PatFras/grupo_3_ticketPro",
-    image: "/projects/ticketPro.webp",
-    tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.NODEJS, TAGS.EXPRESS, TAGS.MYSQL],
+      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astra, Elementor. Hosting and domain service by donweb.",
+    link: "https://laclara.online/",
+    github: "",
+    image: "/projects/laclara.png",
+    tags: [TAGS.WORDPRESS],
+  },
+  {
+    title: "La Ferretería",
+    description:
+      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astro, Elementor. Hosting and domain service by donweb. ",
+    link: "https://laferreteria.store/",
+    github: "",
+    image: "/projects/laferreteria.png",
+    tags: [TAGS.WORDPRESS],
   },
   {
     title: "livePDF",
@@ -71,6 +86,15 @@ const PROJECTS = [
     github: "https://github.com/PatFras/chat-with-pdf",
     image: "/projects/livepdf.webp",
     tags: [TAGS.ASTRO, TAGS.SVELTE, TAGS.TYPESCRIPT],
+  },
+  {
+    title: "ticketPro",
+    description:
+      "Created in 2023 from scratch with React | JavaScript | Express | MySQL. It's an e-commerce that sells tickets for events.",
+    link: "",
+    github: "https://github.com/PatFras/grupo_3_ticketPro",
+    image: "/projects/ticketPro.webp",
+    tags: [TAGS.JAVASCRIPT, TAGS.REACT, TAGS.NODEJS, TAGS.EXPRESS, TAGS.MYSQL],
   },
 ];
 ---
