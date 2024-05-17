@@ -63,7 +63,7 @@ const PROJECTS = [
   {
     title: "La Clara Hospedaje",
     description:
-      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astra, Elementor. Hosting and domain service by donweb.",
+      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astro, Elementor. Deployed online using donweb service.",
     link: "https://laclara.online/",
     github: "",
     image: "/projects/laclara.png",
@@ -72,7 +72,7 @@ const PROJECTS = [
   {
     title: "La Ferretería",
     description:
-      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astro, Elementor. Hosting and domain service by donweb. ",
+      "Created in 2024, website of a local bussines based in Tandil, Bs As. Developed with WordPress, Astro, Elementor. Deployed online using donweb service.",
     link: "https://laferreteria.store/",
     github: "",
     image: "/projects/laferreteria.png",
@@ -90,7 +90,7 @@ const PROJECTS = [
   {
     title: "ticketPro",
     description:
-      "Created in 2023 from scratch with React | JavaScript | Express | MySQL. It's an e-commerce that sells tickets for events.",
+      "Created in 2023 from scratch by my team in a bootcamp in 8 sprints. It's an e-commerce that sells tickets for events.",
     link: "",
     github: "https://github.com/PatFras/grupo_3_ticketPro",
     image: "/projects/ticketPro.webp",
@@ -114,16 +114,16 @@ const PROJECTS = [
           </div>
         </div>
 
-        <div class="w-full md:w-1/2 md:max-w-lg">
+        <div class="w-full md:w-1/2 md:max-w-lg flex flex-col items-center md:items-start text-center md:text-left">
           <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
             {title}
           </h3>
-          <div class="flex flex-wrap mt-2">
+          <div class="flex flex-wrap mt-2 justify-center md:justify-start">
             <ul class="grid grid-cols-3 mb-2 gap-x-2 gap-y-2">
               {tags.map((tag) => (
                 <li>
                   <span
-                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 items-center`}
                   >
                     <tag.icon class="size-4" />
                     {tag.name}
@@ -135,7 +135,7 @@ const PROJECTS = [
             <div class="mt-2 text-gray-700 dark:text-gray-400 text-pretty">
               {description}
             </div>
-            <footer class="flex items-end justify-start mt-4 gap-x-4">
+            <footer class="flex items-center justify-center md:justify-start mt-4 gap-x-4">
               {github && (
                 <LinkButton href={github}>
                   <GitHubProject class="size-6" />

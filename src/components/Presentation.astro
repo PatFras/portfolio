@@ -6,9 +6,11 @@ import LinkedIn from "./icons/LinkedIn.astro";
 ---
 
 <div class="justify-center max-w-xl">
-  <div class="flex gap-4 mb-4">
+  <div
+    class="flex gap-4 mb-4 flex-col items-center text-center md:items-start md:text-left"
+  >
     <img
-      class="rounded-full shadow-lg size-20"
+      class="rounded-full shadow-lg size-16"
       src="/Pic.jpg"
       alt="
     Patricio
@@ -21,35 +23,41 @@ import LinkedIn from "./icons/LinkedIn.astro";
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>Disponible para trabajar</Badge>
+      <Badge>Available to work</Badge>
     </a>
   </div>
-  <h1
-    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  <div
+    class="flex flex-col items-center text-center md:items-start md:text-left"
   >
-    Patricio Frascaroli
-  </h1>
-  <p
-    class="mt-1 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
-  >
-    +3 años de experiencia. <br />
-    <strong>Web Full Stack Developer.</strong>
-  </p>
-  <nav class="flex flex-row gap-2 mt-4 text-xs">
-    <SocialPill
-      href="https://www.linkedin.com/in/patricio-frascaroli-081762253/"
+    <h1
+      class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
     >
-      <LinkedIn class="size-4" />
-      LinkedIn
-    </SocialPill>
-    <SocialPill href="https://github.com/PatFras">
-      <GitHub class="size-4" />
-      GitHub
-    </SocialPill>
-    <SocialPill href="/CV-Patricio Frascaroli-FullStackDev.pdf">
-      Resume
-    </SocialPill>
-  </nav>
+      Patricio Frascaroli
+    </h1>
+    <p
+      class="mt-1 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    >
+      +2 years of experience. <br />
+      <strong>Web Full Stack Developer.</strong>
+    </p>
+    <nav
+      class="flex flex-row gap-2 mt-4 text-xs justify-center md:justify-start"
+    >
+      <SocialPill
+        href="https://www.linkedin.com/in/patricio-frascaroli-081762253/"
+      >
+        <LinkedIn class="size-4" />
+        LinkedIn
+      </SocialPill>
+      <SocialPill href="https://github.com/PatFras">
+        <GitHub class="size-4" />
+        GitHub
+      </SocialPill>
+      <SocialPill href="/CV-Patricio Frascaroli-FullStackDev.pdf">
+        Resume
+      </SocialPill>
+    </nav>
+  </div>
 </div>
 
 <style></style>
